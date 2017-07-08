@@ -13,12 +13,9 @@
     <!-- Theme CSS -->
     <link href="css/creative.min.css" rel="stylesheet">
 </head>
-<body align="center" style="padding: 360px;">
-Successfully logged in!
-<a href="practice.php"><button type="button" class="btn btn-success btn-lg" id="myBtn" style="margin: 30px" >Practice</button></a>
-<a href="level1.php"><button type="button" class="btn btn-success btn-lg" id="myBtn" >Play</button></a>
+<body align="center"  style="padding: 200px; background-image:url(alpha.jpg) ">
+<a href="practice.php"><button type="button" class="btn btn-success btn-lg" id="myBtn" style="margin: 30px; font-size:100px;" >Practice</button></a>
+<a href="level1.php"><button type="button" class="btn btn-success btn-lg" id="myBtn" style="margin: 30px; position: relative; left: 20px;font-size:100px;">Play</button></a>
 </body>
-<?php
 
-?>
 </HTML>

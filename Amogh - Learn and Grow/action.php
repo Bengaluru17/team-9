@@ -1,5 +1,5 @@
 <html>
-<form action="index.html" method="post">
+
 <?php
 $servername = "localhost";
 $username = "root";
@@ -21,7 +21,8 @@ $sql = "INSERT INTO student (sname,password,age,gender,mobile) VALUES (\"$name\"
 
 
 if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully";
+   //<script type="text/javascript">location.href = 'play.php';</script>
+   header("Location: play.php");
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
