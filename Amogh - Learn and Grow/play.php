@@ -16,7 +16,7 @@
 <body align="center" style="padding: 360px;">
 Successfully logged in!
 <a href="practice.php"><button type="button" class="btn btn-success btn-lg" id="myBtn" style="margin: 30px" >Practice</button></a>
-<a href="index.php"><button type="button" class="btn btn-success btn-lg" id="myBtn" >Play</button></a>
+<a href="level1.php"><button type="button" class="btn btn-success btn-lg" id="myBtn" >Play</button></a>
 </body>
 <?php
 
