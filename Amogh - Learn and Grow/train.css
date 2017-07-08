@@ -1,0 +1,16 @@
+.page{
+    display:flex;
+    flex-direction:row;
+    height:100vh;
+}
+
+.sidebar{
+    flex:1;
+    border:solid black 1px;
+    height:100%;
+}
+.content{
+    flex:4;
+    border:solid black 1px;
+    height:100%;
+}
