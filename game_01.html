@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>change picture</title>
+	  <style>
+	  header, footer {
+			padding: 1em;
+			color: white;
+			width : 100%;
+			background-color:#f05f40;
+			clear: left;
+			text-align: center;
+}
+	  </style>
+      <script type = "text/javascript">
+          var rand1,rand2;
+		  function displayNextImage() {
+              x = (x == images.length - 1) ? 0 : x + 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("img").src = images[x];
+          }
+			
+			
+		function imag(){
+		rand1=getRandomArbitrary(0,4)%5;
+		rand2=getRandomArbitrary(0,4)%5;
+		
+		document.getElementById("img1").src = images[rand1+5];
+		
+		document.getElementById("img2").src = images[rand2+5];
+		
+		}
+          function startTimer() {
+              setInterval(displayNextImage, 3000);
+         }
+		  
+		  function getRandomArbitrary(min, max) {
+				return Math.round((Math.random()*10) * (max - min) + min);
+		}
+		
+		function check(val){
+		if((((rand1-rand2)==0)&&(val==1))||(((rand1-rand2)!=0)&&(val==0)))
+			
+			  document.getElementById("prnt").innerHTML = "Correct";
+			  
+			  
+			
+		else 
+			document.getElementById("prnt").innerHTML = "Incorrect";
+		 }
+          var images = [], x = -1;
+          
+		  images[5] = "circle.png";
+		  images[6] = "rectangle.png";
+		  images[7] = "square.png"
+		  images[8] = "star.png";
+		  images[9] = "triangle.png"
+      </script>
+   </head>
+   
+   <body onload = "imag()">
+		<header>
+   <h1>AMOGH NGO</h1><br>
+   <h2>Shape Game</h2>
+</header>
+		<br><br><br><br>
+		<pre>
+                   <center>     <img id="img1" src="blue.png" style ="margin: center"/>                             <img id="img2" src="blue.png" style ="margin: center"/></center>
+      </pre>
+	  <p><center>Does the shapes are same?</p>
+	  <p><button type="button" onclick="check(1)">Same</button>
+	  <button type="button" onclick="check(0)">Different</button>
+	  
+	  <h3><p id="prnt"> </p></h3>
+	  <br>
+	  <a href="game_01.html">Refresh</a>
+	  </center>
+   </body>
+</html>
