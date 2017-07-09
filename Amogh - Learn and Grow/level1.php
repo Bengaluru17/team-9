@@ -1,34 +1,27 @@
 <HTML>
-<BODY style="font-size: 32px;">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+<BODY style="font-size: 32px;margin-left:20px;">
+<header class="w3-container w3-teal">
+  <h1>Level 1</h1>
+</header>
 <?php session_start();
     
            
 $capa = array("A", "B", "C","D","E","F","G");
 $smalla = array("a", "b", "c","d","e","f","g");
 
-echo "Address<BR>";
+
 $cap1 = mt_rand(0,6);
-echo $capa[$cap1];
-echo ", ";
 $small1 = mt_rand(0,6);
-echo $smalla[$small1];
-echo ", ";
 $cap2 = mt_rand(0,6);
-echo $capa[$cap2];
-echo ", ";
 $small2 = mt_rand(0,6);
-echo $smalla[$small2];
-echo ", ";
 $cap3 = mt_rand(0,6);
-echo $capa[$cap3];
-echo ", ";
 $small3 = mt_rand(0,6);
-echo $smalla[$small3];
 $cap4 = mt_rand(0,6);
-echo $capa[$cap4];
 $small4 = mt_rand(0,6);
-echo $smalla[$small4];
+
 $a=1;
 
 $_SESSION['a'] = $a;
@@ -161,6 +154,7 @@ Type the other case for each of the following
                     </div>
                  <input type="submit" value="Submit Quiz" />
 </form>
+
 </BODY>
 </HTML><?php
 

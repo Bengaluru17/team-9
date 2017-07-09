@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	
@@ -11,10 +12,14 @@
      }   
      body{
         font-size: 28px;
+		margin-left:20px;
      }
     </style>
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
+<header class="w3-container w3-teal">
+  <h1>Level 2</h1>
+</header>
  <?php session_start();
     
            
@@ -39,7 +44,6 @@ echo $statea[$state];
 echo ", ";
 $country = mt_rand(0,2);
 echo $countrya[$country];
-echo ", ";
 $a=1;
 
 $_SESSION['a'] = $a;
@@ -48,10 +52,10 @@ $_SESSION['a'] = $a;
 
 	<div id="page-wrap">
 
-		<h1>Level 2</h1>
+		
 		
 		<form action="level2grade.php" method="POST"> 
-		
+		<fieldset>
             <ol>
             
                 <li>
@@ -131,6 +135,7 @@ $_SESSION['a'] = $a;
             </ol>
             
             <input type="submit" value="Submit Quiz" />
+			</fieldset>
 		
 		</form>
 	
@@ -153,3 +158,5 @@ $_SESSION['a'] = $a;
 </body>
 
 </html>
+
+

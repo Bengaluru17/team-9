@@ -3,18 +3,21 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	
-	<title>PHP Quiz</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<title>Level2</title>
 	
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
-<body>
+<body style="margin-left:20px;">
 
 	<div id="page-wrap">
 
-		<h1>Final Quiz for Lip building</h1>
-		
+		<header class="w3-container w3-teal">
+  <h1>Score</h1>
+</header>
+		<br><br>
         <?php
         
             
@@ -36,7 +39,7 @@
             if($answer4 == $a4) { $totalCorrect++; }
             if($answer5 == $a5) { $totalCorrect++; }
             
-            echo "<div id='results'>$totalCorrect / 5 correct</div>";
+            echo "<div id='results' style=\"font-size:30px;\">$totalCorrect / 5 correct</div>";
             
         ?>
 	
@@ -51,7 +54,8 @@
 	pageTracker._initData();
 	pageTracker._trackPageview();
 	</script>
-
+	<br>
+<a href="level2.php"><button class="btn btn-success btn-lg" style="font-size:30px;">Play Again</Button></a>
 </body>
 
 </html>

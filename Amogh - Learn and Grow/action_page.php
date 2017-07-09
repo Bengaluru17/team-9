@@ -15,8 +15,6 @@
 </head>
 <body align="center" style="padding: 360px;">
 <?php
-error_reporting(-1);
-ini_set('display_errors', 'On');
 
 
 $servername = "localhost";

@@ -3,7 +3,8 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>PHP Quiz</title>
 	
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -13,7 +14,9 @@
 
 	<div id="page-wrap">
 
-		<h1>Final Quiz for Lip building</h1>
+		<header class="w3-container w3-teal">
+  <h1>Score</h1>
+</header>
 		
         <?php
         
@@ -45,7 +48,7 @@
             if($answer7 == strtolower($a7)) { $totalCorrect++; }
             if($answer8 == strtolower($a8)) { $totalCorrect++; }
             
-            echo "<div id='results'>$totalCorrect / 8 correct</div>";
+            echo "<div id='results' style=\"font-size:30px;\">$totalCorrect / 8 correct</div>";
             
         ?>
 	
@@ -60,7 +63,7 @@
 	pageTracker._initData();
 	pageTracker._trackPageview();
 	</script>
-
+<br />
 </body>
-
+<a href="level1.php"><button style="font-size:30px;">Play Again</Button></a>
 </html>
